@@ -1,0 +1,7 @@
+Berikut langkah-langkah persiapan
+1. download codeigniter 3 dari situs https://codeigniter.com/userguide3/installation/downloads.html
+2. extract di c/xampp/htdocs
+3. rename folder jadi siakad
+4. jalankan xampp app apache dan mysql
+5. panggil situs ci tersebut http://localhost:8080/siakad/
+6. Selesai
