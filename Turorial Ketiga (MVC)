@@ -20,3 +20,15 @@ C = Controller (otak program)
  pada controller menampilkan dengan echo. Controller hanya cocok untuk meload view dengan perintah berikut.
  
  ```php $this->load->view('namaviewtanpaextensi'); ```
+ 
+ #ATURAN MODEL
+ 1. model harus di simpan di folder application/models
+ 2. nama model harus sama dengan nama file model nama_model extends CI_model
+ 3. nama model harus diawali huruf besar
+ 4. hanya boleh pakai _ tidak boleh spasi dan -
+ 5. tidak boleh ada nama function atau method yang sama dalam satu model
+ 
+ #KEGUNAAN MODEL
+ model sangat cocok untuk berinteraksi dengan database dan hanya berisi logika dan function
+ 
+ 
