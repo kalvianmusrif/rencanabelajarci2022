@@ -31,4 +31,12 @@ C = Controller (otak program)
  #KEGUNAAN MODEL
  model sangat cocok untuk berinteraksi dengan database dan hanya berisi logika dan function
  
+ #ATURAN VIEW
+ 1. file view harus disimpan di folder application/views
+ 2. view bisa tampil setelah di load di controller $this->load->view('namaview_tanpaextensi');
+ 
+ #KEGUNAAN VIEW
+ hanya menampilkan UI atau antarmuka untuk user
+ 
+ 
  
