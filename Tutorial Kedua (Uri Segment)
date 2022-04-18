@@ -1,0 +1,26 @@
+Pengaturan Kedua Pada Codeigniter terkait cara memanggil controller lain yang kita buat.
+
+1. Buat Sebuah Controller Baru Dengan Nama Contoh.php pada folder Controller
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Contoh extends CI_Controller {
+
+public function index(){
+	echo "<h1> Selamat Datang Siakad</h1>";
+}
+
+
+}
+
+?>
+
+
+2. Jalankan dengan cara 
+http://localhost:8080/siakad/index.php/contoh/index
+
+Localhost : alamat server
+siakad : nama project/directori
+index.php :nama controller default ci
+contoh : nama controller/class (disebut segment 1)
+index : nama method /fungsi dalam controller (disebut segment 2)
