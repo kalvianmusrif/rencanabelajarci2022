@@ -9,3 +9,10 @@ C = Controller (otak program)
  1.User -> controller -> view
  2.User -> controller -> model
  
+ #ATURAN CONTROLLER
+ 1. controller harus tersimpan di folder application/controller
+ 2. nama class controller dan nama file controller harus sama
+ 3. nama controller harus di awali huruf kapital di awal
+ 4. tidak boleh nama controller menandung spasi, "-" kecuali underscore _
+ 
+ 
