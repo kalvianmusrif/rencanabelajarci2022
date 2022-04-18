@@ -15,4 +15,8 @@ C = Controller (otak program)
  3. nama controller harus di awali huruf kapital di awal
  4. tidak boleh nama controller menandung spasi, "-" kecuali underscore _
  
+ #KEGUNAAN CONTROLLER
+ controller sangat cocok untuk menjadi penghubung antar user dengan model dan user dengan view maka tidak cocok
+ pada controller menampilkan dengan echo. Controller hanya cocok untuk meload view dengan perintah berikut.
  
+ ```php $this->load->view('namaviewtanpaextensi'); ```
