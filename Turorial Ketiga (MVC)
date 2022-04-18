@@ -1,0 +1,11 @@
+Dalam framework codeigniter 3 ini bisa di terapkan konsep MVC.
+
+M = Model (pengolaan data)
+V = View (tampilan)
+C = Controller (otak program)
+
+ Proses MVC harus melalui controller terlebih dahulu 
+ 
+ 1.User -> controller -> view
+ 2.User -> controller -> model
+ 
