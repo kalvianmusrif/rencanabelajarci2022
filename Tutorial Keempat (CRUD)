@@ -1,0 +1,61 @@
+kita akan melakukan crud untuk sistem akademik SIAKAD
+
+#MEMBUAT DATABASE : siakad
+
+#MEMBUAT TABEL : tb_mhs
+id int primary key auto_in
+nama varchar 20
+nim int 8
+alamat varchar 30
+
+#SETING AUTOLOAD.php
+$autoload['libraries'] = array('database');
+$autoload['model'] = array('m_mhs');
+
+#SETING DATABASE
+'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'siakad',
+  
+#MEMBUAT CONTROLLER 
+  
+  public function index(){
+    //kita load dulu modelnya
+    $this->load->model('m_mhs');
+    
+    //kita panggil script untuk ambil data
+    $data['mahasiswa']=$this->m_mhs->get_data();
+    $this->load->view('v_mhs',$data);
+  }
+    
+  }
+  
+#MEMBUAT MODEL
+  
+  <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class M_mhs extends CI_Model {
+
+	public function get_data(){
+	return $this->db->get('tb_mhs')->result_array();
+	}
+
+}
+
+#MEMBUAT VIEW
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daftar Mahasiswa</title>
+</head>
+<body>
+<?php
+	print_r($mahasiswa);
+?>
+</body>
+</html>
+
+
+
