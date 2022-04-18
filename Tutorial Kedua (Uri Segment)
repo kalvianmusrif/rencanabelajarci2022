@@ -24,3 +24,13 @@ siakad : nama project/directori
 index.php :nama controller default ci
 contoh : nama controller/class (disebut segment 1)
 index : nama method /fungsi dalam controller (disebut segment 2)
+
+3. Menghilangkan index.php
+buat sebuah file sejajar dengan application dengan nama .htaccess
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+Sumber : https://codeigniter.com/userguide3/general/urls.html?highlight=htaccess
+
